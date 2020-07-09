@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* font-size: 62.5%; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+/* Header start */
+
+
+.headi{
+    background: #3D405B;
+    min-height: 20vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Contrail One', cursive;   
+}
+
+.box{
+    padding:0.8rem 1.3rem 0.8rem 1.3rem;
+    margin: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: white 3px solid;
+}
+
+#f-logo{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    line-height: 45px;
+}
+
+#f-logo:after{
+    font-family:'Oswald', sans-serif;
+    content: '.';
+    color:#E07A5F;
+}
+
+ul{
+    display:flex;
+    list-style: none;    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height:10vh;
+}
+
+ul a:hover{
+    color: #E07A5F;
+    transition: ease 0.5s all;
+}
+
+ul a{
+    padding:0.5rem;
+}
+
+ul li{
+    margin: 1.5rem;
+}
+/* Header end */
