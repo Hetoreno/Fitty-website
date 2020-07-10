@@ -18,12 +18,7 @@ a{
     text-decoration: none;
     color:white;
 }
-
-
-
 /* Header start */
-
-
 .headi{
     background: #3D405B;
     min-height: 20vh;
@@ -88,3 +83,21 @@ ul li{
     margin: 1.5rem;
 }
 /* Header end */
+/*Intro Start*/
+.cover{
+    min-height:80vh;
+    background:red;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro-box{
+    position: absolute;
+    left: 5%;
+}
+/*Intro End*/
