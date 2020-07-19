@@ -49,6 +49,7 @@ a{
     color: white;
     display: flex;
     line-height: 45px;
+    font-family: 'Contrail One', cursive; 
 }
 
 #f-logo:after{
@@ -135,3 +136,38 @@ ul li{
 /* Catalouge Start */
 
 /* Catatlouge End */
+
+/* Footer Start */
+footer{
+    background: #3D405B;
+    color:white;
+    min-height:10vh;
+}
+.footer-wrap{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo:after{
+        font-family:'Oswald', sans-serif;
+        content: '.';
+        color:#E07A5F;
+}
+.bot-footer{
+    min-height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a:hover{
+    color: #E07A5F;
+    transition: ease 0.5s all;
+}
+
+.footer-cop{
+    
+}
+/* Footer End */
