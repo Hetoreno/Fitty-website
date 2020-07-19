@@ -30,7 +30,7 @@ a{
     justify-content: center;
 }
 
-h2{
+.intro-box h2{
     font-family: 'Contrail One', cursive;   
 }
 
@@ -101,3 +101,37 @@ ul li{
     left: 5%;
 }
 /*Intro End*/
+/*About Start*/
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:1rem;
+}
+
+.card-img img{
+    max-width:70%;
+    margin:0.5rem;
+}
+
+.card-img{
+    width:30%;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* About End */
+/* Catalouge Start */
+
+/* Catatlouge End */
