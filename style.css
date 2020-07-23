@@ -107,28 +107,39 @@ ul li{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin:1rem;
 }
 
 .card-img img{
-    max-width:70%;
-    margin:0.5rem;
+    max-width:80%;
 }
 
 .card-img{
-    width:30%;
+    width:20%;
 }
 
 .card-desc {
     display: flex;
     flex-direction: column;
+}
+
+.card-desc h2{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.card-desc p{
+    font-size:1.1rem ;
+    color:#4d4d4d;
 }
 
 
