@@ -145,6 +145,24 @@ ul li{
 
 /* About End */
 /* Catalouge Start */
+.cat-grid{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.cat-img{
+    width:90%;
+    height:10%;
+}
+
+.cat-grid img{
+    width:10%;
+    height:10%;
+}
+
 
 /* Catatlouge End */
 
