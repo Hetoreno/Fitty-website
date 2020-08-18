@@ -158,10 +158,10 @@ ul li{
     justify-content: center;
     flex-direction: column;
     height:auto;
+    padding: 1.5rem;
 }
 
 .cat-grid{
-    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -173,12 +173,16 @@ ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:50%;
+    width:85%;
     background:red;
 }
 
-.cat-grid img{
-    max-width:50%;
+.cat-img h2{
+    position: absolute;
+    background:white;
+    padding:1.5rem 4.5rem;
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 .pic-one, .pic-two{
@@ -199,7 +203,41 @@ ul li{
     background-position:center;
 }
 
+.pic-three, .pic-four{
+    width:50%;
+}
 
+.pic-three{
+    min-height:35vh;
+    background: url(./Images/pexels-photo-1353029.jpeg);
+    background-position:center;
+    background-size:cover;
+}
+
+.pic-four{
+    min-height:35vh;
+    background:url(./Images/pexels-photo-1790068.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pic-five, .pic-six{
+    width:50%;
+}
+
+.pic-five{
+    min-height:35vh;
+    background:url(./Images/pexels-photo-1760699.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.pic-six{
+    min-height:35vh;
+    background: url(./Images/pexels-photo-1018911.jpeg);
+    background-size:cover;
+    background-position: center;
+}
 /* Catatlouge End */
 
 /* Footer Start */
@@ -230,9 +268,5 @@ footer{
 footer a:hover{
     color: #E07A5F;
     transition: ease 0.5s all;
-}
-
-.footer-cop{
-    
 }
 /* Footer End */
