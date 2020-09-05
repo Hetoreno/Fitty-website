@@ -7,6 +7,7 @@
     <meta name="robots" content= "index,follow">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="./Logos/3668861-clothes-fashion-outfit-tshirt_108013.png">
 </head>
@@ -33,11 +34,14 @@
         </header>
 
         <div class = "cover">
+            
             <div class="intro-box">
-        <h2>Recycled Fashion</h2>
-        <p>Hundreds of recycled clothes to choose from.</p>
-        <button>Read More</button>
+                <h2>Recycled Fashion</h2>
+                <p>Hundreds of recycled clothes to choose from.</p>
+                <button>Read More</button>
             </div>
+            <div class="device-img">
+                </div>
     </div>
     </section>
 
@@ -69,19 +73,20 @@
                     <img src="./Logos/question.png" alt="">
                 </div>
                 <div class="card-desc">
-                    <h2>24/7 Customer Support</h2>
-                    <p>Our customer support is open 24/7 to help you with any issues.</p>
+                    <h2> Customer Support</h2>
+                    <p>Customer support is open 24/7 to help.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr>
+    <hr class = border>
 
     <section id="catalouge">
 
         <header class="cat-header">
             <h2>Catalouge 2020</h2>
+            <hr class="underline">
         </header>
 
         <div class="cat-grid">
@@ -130,19 +135,32 @@
     </section>
 
 <section id="article">
+
     <div class="container">
-        <img src="./Images/pexels-photo-818992.png" alt="">
-    <h3>June's top model</h3>
-    <p>See what our popular model for June's catalouge has to say for summer 2020.</p>
-    <button>Read The Story</button>
+        <div class="img-cont">
         </div>
+        <div class= "blog">
+        
+        
+        <div class="art-descr">
+            <h2>Article</h2>
+            <h3>June's top model</h3>
+            <p>See what our popular model for June's catalouge has to say for summer 2020.</p>
+            <button class="button-art">Read The Story    <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+
 </section>
 
 <footer>
     <div class="footer-wrap">
         <div class='footer-card'>
             <h3 class='footer-logo'>Fitty</h3>
-            <p>Address:1224 Burger St. <br> 99212 Los Angeles Phone:123-456-7890 <br> Email: fitty.contact@gmail.com</p>
+            <p class="adress">Address:1224 Burger St. 99212, Los Angeles</p>
+            <p>Phone: (123) - 456 - 7890</p>
+            <p>Email: fitty.contact@gmail.com</p>
         </div>
         
         <div class="footer-card">
@@ -161,16 +179,17 @@
 
         <div class="footer-card">
             <h3>Join Our Newsletter</h3>
-            <p class="title">ad</p>
             <p>Get E-mail updates about our latest shop and special offers.</p>
-            <input type="text">
-            <button>SUBSCRIBE</button>
+            <div class="input-cont">
+                <input type="text" placeholder="Enter your Email...">
+                <button>SUBSCRIBE</button>
+        </div>
         </div>
     </div>
     <hr>
 
     <div class="bot-footer">
-    <h3 class='footer-cop'>Copyright &copy; All rights reserved</h2>
+    <p class='footer-cop'>Copyright &copy; All rights reserved</p>
     </div>
     </footer>
 </body>

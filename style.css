@@ -5,7 +5,7 @@
 }
 
 html{
-    /* font-size: 62.5%; */
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
@@ -18,10 +18,13 @@ a{
     text-decoration: none;
     color:white;
 }
+
+h2{
+    font-size:5rem;
+}
 /* Header start */
 .headi{
     background: #3D405B;
-    min-height: 20vh;
 }
 
 .logo{
@@ -35,21 +38,18 @@ a{
 }
 
 .box{
-    padding:0.8rem 1.3rem 0.8rem 1.3rem;
     margin: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: white 3px solid;
 }
 
 #f-logo{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: lighter;
     color: white;
     display: flex;
     line-height: 45px;
     font-family: 'Contrail One', cursive; 
+    margin:1rem;
 }
 
 #f-logo:after{
@@ -66,9 +66,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    min-height:10vh;
+    min-height:8vh;
+    font-size:2rem;
 }
 
 ul a:hover{
@@ -99,55 +99,108 @@ ul li{
 
 .intro-box{
     position: absolute;
+    top:50%;
     left: 5%;
+}
+
+.intro-box{
+    font-size: 2rem;
+}
+
+.intro-box p{
+    margin:1rem;
+}
+
+.intro-box h2{
+    margin:1rem;
+}
+
+.intro-box p{
+    font-size:2.4rem;
+}
+
+.intro-box button{
+    padding:1rem 3rem;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    font-size:2.2rem;
+    background:#E07A5F;
+    margin:1rem;
+}
+
+.intro-box button:hover{
+    transition: 0.3s ease;
+    background:#c56145;
 }
 /*Intro End*/
 /*About Start*/
 .cards{
+    width:90%;
+    margin:auto;
     display:flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .card{
     display:flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width:50%;
     margin:1rem;
 }
 
 .card-img img{
-    max-width:80%;
+    max-width:75%;
 }
 
 .card-img{
-    width:20%;
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-desc {
     display: flex;
     flex-direction: column;
+    width:70%;
 }
 
 .card-desc h2{
-    padding-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom:1rem;
 }
 
 .card-desc p{
-    font-size:1.1rem ;
+    font-size:2rem ;
     color:#4d4d4d;
 }
 
 
 /* About End */
+hr.border{
+    width:90%;
+    margin:auto;
+}
+
 /* Catalouge Start */
 .cat-header{
+    width:45%;
     text-align: center;
+    margin:auto;
+}
+
+.cat-header h2{
     margin:2rem;
+    font-size:3.5rem;
+}
+
+hr.underline{
+    border:2px solid #E07A5F;
+    margin:1rem;
 }
 
 .cat{
@@ -182,7 +235,7 @@ ul li{
     background:white;
     padding:1.5rem 4.5rem;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 .pic-one, .pic-two{
@@ -240,6 +293,68 @@ ul li{
 }
 /* Catatlouge End */
 
+/* Article Start */
+.container{
+    display:flex;
+    width:66%;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:60%;
+    min-height:65vh;
+    margin:1rem;
+}
+
+.img-cont{
+    width:40%;
+    min-height:70vh;
+    background: url(/Images/pexels-photo-818992.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.art-descr h2{
+    color:#E07A5F;
+    margin-bottom:5rem;
+}
+
+.art-descr h3{
+    margin-bottom: 5rem;
+}
+
+.art-descr p{
+    font-size:2.3rem;
+}
+
+.art-descr h3{
+    font-size: 3rem;
+}
+
+.button-art{
+    padding:1.3rem 3.5rem;
+    border:4px solid #E07A5F;
+    background:none;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-top:2rem;
+}
+
+.fa-angle-right:hover{
+    
+}
+
+/* .container img{
+    width:100%;
+} */
+
+/* Article End */
+
 /* Footer Start */
 footer{
     background: #3D405B;
@@ -250,10 +365,17 @@ footer{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+}
+
+.footer-logo{
+    font-family: 'Contrail One', cursive;
+    font-weight:lighter;
+    font-size:3.5rem;
 }
 
 .footer-logo:after{
-        font-family:'Oswald', sans-serif;
         content: '.';
         color:#E07A5F;
 }
@@ -265,8 +387,309 @@ footer{
     text-align: center;
 }
 
+footer h3{
+    font-size:3rem;
+    padding:1.5rem 0rem;
+}
+
+.footer-cop{
+    font-size:2rem;
+}
+
+footer p{
+    font-size:1.6rem;
+    margin: 0.8rem 0rem;
+}
+
 footer a:hover{
     color: #E07A5F;
     transition: ease 0.5s all;
 }
+
+footer input{
+    height:auto;
+    width:65%;
+    font-size:2rem;
+}
+
+footer button{
+    padding:1rem 3rem;
+    background:#E07A5F;
+    border:none;
+    color:white;
+    font-size:1.4rem;
+    font-weight: 600;
+}
+
+footer button:hover{
+    background:#c56145;
+    transition: 0.3s ease;
+}
+
+.input-cont{
+    display:flex;
+}
 /* Footer End */
+
+/* Tablet Start */
+@media screen and (max-width:1024px) and (min-width:501px){
+    html{
+        font-size:70%;
+    }
+    /* Nav Tab start */
+    nav{
+            
+            font-size:2rem;
+        }
+
+        ul{
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+    /* Nav tab end */
+
+    /* Intro tablet Start */
+    .cover {
+        min-height:50vh;
+        background: #F4F1DE;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .intro-box{
+        width:50%;
+        top:25%;
+        left:2%;
+    }
+    .intro-box h2{
+        color:#3D405B;
+        font-size: 4rem;
+    }
+
+    .intro-box p, button{
+        font-size: 2rem;
+    }
+
+    .intro-box button{
+        padding:1.5rem 6rem;
+    }
+
+    .device-img{
+        
+        background:linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:50%;
+        min-height:45vh;
+    }
+    /* Intro Tablet End */
+    /* About tab Start */
+    .cards{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin:2rem;
+        width:100%;
+    /* border-bottom: black 1px solid; */
+    }
+
+    .card h2{
+        font-size:4rem;
+    }
+
+    .card p{
+        font-size:3rem;
+    }
+
+    .card-img img{
+        width:100%;
+    }
+    /* About tab End */
+    /* Catalouge Tab Start */
+    .cat-header h2{
+        font-size:5rem;
+    }
+    .cat{
+        width:95%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:auto;
+        padding:0;
+        margin-bottom: 1rem;
+    }
+
+    .pic-one, .pic-two{
+        width:50%;
+    }
+
+    .cat-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        background:red;
+    }
+    
+    /* Catalouge Tab End */
+    /* Article tab start */
+    .container{
+        width:95%;
+    }
+    .blog{
+        min-height:35vh;
+        justify-content: center
+    }
+    .img-cont{
+        min-height:60vh;
+    }
+    .art-descr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .art-descr h2{
+        font-size: 6rem;
+    }
+
+    .art-descr h3{
+        font-size: 5rem;
+    }
+
+    .art-descr p{
+        font-size: 3rem;
+    }
+
+    .button-art{
+        padding:2rem 4rem;
+        font-size: 3rem;
+        border:6px solid #E07A5F;
+    }
+    /* Article tab End */
+    /* Footer tab start */
+    .footer-wrap{
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin: auto;
+    }
+
+    .footer-wrap h3{
+        font-size:4rem;
+    }
+
+    .footer-wrap p{
+        font-size:2.5rem;
+    }
+
+    footer input{
+        width:50%;
+    }
+
+    footer button{
+        padding:1rem 3rem;
+        font-size:2.5rem;
+        color:white;
+    }
+    
+    .input-cont{
+        display:flex;
+    }
+    /* Footer tab End */
+}
+/* Tablet End */
+
+/* Mobile Start */
+@media screen and (max-width:500px){
+    html{
+        font-size: 45%;
+    }
+    /* Nav mob Start */
+    nav{
+        font-size:2rem;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* Nav mob End */
+    /* Intro mob Start */
+    /* Intro mob End */
+    /* About mob Start */
+    .cards{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin:2rem;
+        width:100%;
+    }
+    /* About mob End */
+    /* Cat mob Start */
+    .cat-header{
+        width:100%;
+    }
+
+    .cat{
+        width:95%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:0;
+        margin-bottom: 1rem;
+    }
+
+    .cat-img{
+        width:100%;
+    }
+    /* cat mob End */
+    /* Art mob Start */
+    .container{
+        width:95%;
+    }
+
+    .blog{
+        min-height:25vh;
+    }
+
+    .img-cont{
+        min-height:65vh;
+    }
+    /* Art mob End */
+    /* Footer mob Start */
+    .footer-wrap{
+        display:flex;
+        flex-direction: column;
+        width:95%;
+        margin: auto;
+    }
+
+    .footer-wrap h3{
+        font-size:3rem;
+    }
+
+    .footer-wrap p{
+        font-size:2rem;
+    }
+    /* Footer mob End */
+}
+/* Mobile End */
