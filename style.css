@@ -17,10 +17,15 @@ button{
 a{
     text-decoration: none;
     color:white;
+    
 }
 
 h2{
     font-size:5rem;
+}
+
+.ani{
+    color:red;
 }
 /* Header start */
 .headi{
@@ -214,6 +219,14 @@ hr.underline{
     padding: 1.5rem;
 }
 
+.cat a{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+
 .cat-grid{
     display:flex;
     align-items: center;
@@ -228,6 +241,11 @@ hr.underline{
     justify-content: center;
     width:85%;
     background:red;
+    transition: all 0.2s ease;
+}
+
+.cat-img:hover{
+    transform: scale(1.1);
 }
 
 .cat-img h2{
@@ -236,6 +254,7 @@ hr.underline{
     padding:1.5rem 4.5rem;
     font-weight: bolder;
     font-size: 3.5rem;
+    
 }
 
 .pic-one, .pic-two{
@@ -290,6 +309,11 @@ hr.underline{
     background: url(./Images/pexels-photo-1018911.jpeg);
     background-size:cover;
     background-position: center;
+}
+
+.scale{
+    transform: scale(1.1);
+    
 }
 /* Catatlouge End */
 
