@@ -1,10 +1,5 @@
-/* const hover = document.querySelector(".cat-img");
-hover.addEventListener("mouseenter",catPic);
-hover.addEventListener("mouseleave",catPic);
+/* const button = document.querySelector(".button-art");
 
-function catPic(event){
-    const item= event.target;
-    console.log(item);
+button.addEventListener("mouseover",function(){
 
-    hover.classList.toggle("scale");
-} */
+}); */

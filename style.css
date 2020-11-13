@@ -242,10 +242,31 @@ hr.underline{
     width:85%;
     background:red;
     transition: all 0.2s ease;
+    position: relative;
 }
 
-.cat-img:hover{
+/* .cat-img:hover{
     transform: scale(1.1);
+} */
+
+.cat-img.exp::before{
+    content:'';
+    position: absolute;
+    top:14rem;
+    left:56rem;
+    right:56rem;
+    bottom:14rem;
+    border:8px solid rgba(255, 255, 255, 0.315) ;
+    transition: 0.25s ease-out;
+    z-index: 1;
+}
+
+.cat-img.exp:hover::before,
+.hover.br-exp:focus::before{
+    top:calc(8px * 4);
+    right:calc(8px * 4);
+    left:calc(8px * 4);
+    bottom:calc(8px * 4);
 }
 
 .cat-img h2{
@@ -254,7 +275,7 @@ hr.underline{
     padding:1.5rem 4.5rem;
     font-weight: bolder;
     font-size: 3.5rem;
-    
+    z-index: 2;
 }
 
 .pic-one, .pic-two{
@@ -369,9 +390,9 @@ hr.underline{
     margin-top:2rem;
 }
 
-.fa-angle-right:hover{
-    
-}
+/* .fa-angle-right:hover{
+    backg
+} */
 
 /* .container img{
     width:100%;
