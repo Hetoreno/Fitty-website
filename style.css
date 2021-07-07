@@ -25,8 +25,8 @@ h2{
 }
 
 .ani{
-    color:red;
 }
+
 /* Header start */
 .headi{
     background: #3D405B;
@@ -86,14 +86,29 @@ ul a{
 }
 
 ul li{
-    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.drop-down{
+    display:none;
+    position: absolute;
+    background:white;
+    z-index: 3;
+}
+
+.drop-down a{
+    color:black;
+}
+
+.cata-dropdown:hover .drop-down{
+    display: block;
+    margin-top:15px;
 }
 /* Header end */
 /*Intro Start*/
 .cover{
     min-height:80vh;
-    background:red;
-    background: linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -239,8 +254,7 @@ hr.underline{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:85%;
-    background:red;
+    width:100%;
     transition: all 0.2s ease;
     position: relative;
 }
@@ -252,10 +266,10 @@ hr.underline{
 .cat-img.exp::before{
     content:'';
     position: absolute;
-    top:14rem;
-    left:56rem;
-    right:56rem;
-    bottom:14rem;
+    top:50%;
+    left:50%;
+    right:50%;
+    bottom:50%;
     border:8px solid rgba(255, 255, 255, 0.315) ;
     transition: 0.25s ease-out;
     z-index: 1;
@@ -279,54 +293,54 @@ hr.underline{
 }
 
 .pic-one, .pic-two{
-    width:50%;
+    width:100%;
 }
 
 .pic-one{
-    min-height:35vh;
+    min-height:50vh;
     background:url(./Images/pexels-photo-1457983.jpeg);
     background-position: center;
     background-size: cover;
 }
 
 .pic-two{
-    min-height:35vh;
+    min-height:50vh;
     background: url(./Images/man-wearing-a-jacket-sitting-on-brown-wooden-crate-594610.jpg);
     background-size: cover;
     background-position:center;
 }
 
 .pic-three, .pic-four{
-    width:50%;
+    width:100%;
 }
 
 .pic-three{
-    min-height:35vh;
+    min-height:50vh;
     background: url(./Images/pexels-photo-1353029.jpeg);
     background-position:center;
     background-size:cover;
 }
 
 .pic-four{
-    min-height:35vh;
+    min-height:50vh;
     background:url(./Images/pexels-photo-1790068.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .pic-five, .pic-six{
-    width:50%;
+    width:100%;
 }
 
 .pic-five{
-    min-height:35vh;
-    background:url(./Images/pexels-photo-1760699.png);
+    min-height:50vh;
+    background:url(./Images/pexels-photo-1760699.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .pic-six{
-    min-height:35vh;
+    min-height:50vh;
     background: url(./Images/pexels-photo-1018911.jpeg);
     background-size:cover;
     background-position: center;
@@ -359,9 +373,13 @@ hr.underline{
 .img-cont{
     width:40%;
     min-height:70vh;
-    background: url(/Images/pexels-photo-818992.png);
-    background-position: center;
-    background-size: cover;
+}
+
+.img-cont img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: drop-shadow(2px 4px 8px #585858);
 }
 
 .art-descr h2{
@@ -410,7 +428,7 @@ footer{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width:90%;
+    width:80%;
     margin: auto;
 }
 
@@ -433,7 +451,7 @@ footer{
 }
 
 footer h3{
-    font-size:3rem;
+    font-size:2.4rem;
     padding:1.5rem 0rem;
 }
 
@@ -522,7 +540,7 @@ footer button:hover{
 
     .device-img{
         
-        background:linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpeg);
+        background:linear-gradient(rgba(0,0,0,0.5), transparent) , url(./Images/pexels-photo-934069.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -559,6 +577,10 @@ footer button:hover{
     }
     /* About tab End */
     /* Catalouge Tab Start */
+
+    .cat-img.exp::before{
+        display: none;
+    }
     .cat-header h2{
         font-size:5rem;
     }
@@ -582,7 +604,6 @@ footer button:hover{
         align-items: center;
         justify-content: center;
         width:100%;
-        background:red;
     }
     
     /* Catalouge Tab End */
@@ -705,6 +726,10 @@ footer button:hover{
 
     .cat-img{
         width:100%;
+    }
+    
+    .cat-img.exp::before{
+        display: none;
     }
     /* cat mob End */
     /* Art mob Start */
